@@ -1,8 +1,8 @@
-PWD /Users/curry/workspace/mathematical
+PWD /Users/curry/workspace/mathematics
 INPUT /usr/local/texlive/2018/texmf.cnf
 INPUT /usr/local/texlive/2018/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/curry/workspace/mathematical/set_theory.tex
+INPUT /Users/curry/workspace/mathematics/set_theory.tex
 OUTPUT set_theory.log
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls

@@ -17,37 +17,39 @@
 	      \emph{Let \(A\) be a set. For any object \(x \in A\), and any object \(y\), suppose we have a statement \(P(x, y)\) pertaining to \(x\) and \(y\),
 		      such that for each \(x \in A\) there is at most one \(y\) for which \(P(x, y)\) is true.
 		      Then there exsists a set \(\{y: P(x, y)\ is\ true\ for\ some\ x \in A\}\), such that for any object \(z\),
-          }
-          \[\begin{aligned} 
-            z \in \{ y:{}& P(x, y)\ is\ true\ for\ some\ x\ \in A \} \\ 
-            & \Leftrightarrow P\ is\ true\ for\ some\ x \in A. 
-          \end{aligned}\]
-          }
+	      }
+	      \[\begin{aligned}
+			      z \in \{ y:{} & P(x, y)\ is\ true\ for\ some\ x\ \in A \}        \\
+			                    & \Leftrightarrow P\ is\ true\ for\ some\ x \in A.
+		      \end{aligned}\]
+	      }
 \end{enumerate}
 
-\emph{(De Morgan laws) We have \(X \backslash (A \cup B) = (X \backslash A) \cap (X \backslash B)\)} and \(X \backslash (A \cap B) = (X \backslash A) \cup (X \backslash B)\).
+\emph{(De Morgan laws) We have
+	\(X \backslash (A \cup B) = (X \backslash A) \cap (X \backslash B)\)} and \(X \backslash (A \cap B) = (X \backslash A) \cup (X \backslash B)\).
 
-And we use \emph{cardinality}to describe the counts of the elements in a set.
+And we use \emph{cardinality} to describe the counts of the elements in a set.
 
 
 \textbf{Equality of functions.} \emph{Two functions f, g with the same domain and rage are said to be equal, if and only if for every \(x \in X\)}, \(f(x) = g(x)\).
 
-Let's look at the function \(f: \phi \rightarrow X\), from the empty set to an arbitrary set \(X\). We can say that for every \(X\), there's only one empty function.
+Let's look at the function \(f: \phi \rightarrow X\), from the empty set to an arbitrary set \(X\).
+We can say that for every \(X\), there's only one empty function.
 
 \textbf{Lemma (Composition is associative).} \emph{
-        Let \(f: Z \rightarrow W\), \(g: Y \rightarrow Z\), \(h: X \rightarrow Y\) be funcitons.
-        Then \(f \circ (g \circ h)=(f \circ g) \circ h\).
+	Let \(f: Z \rightarrow W\), \(g: Y \rightarrow Z\), \(h: X \rightarrow Y\) be funcitons.
+	Then \(f \circ (g \circ h)=(f \circ g) \circ h\).
 }
 
-A function is one-to-one(or injective) if \[
-    f(x) = f(x') \Rightarrow x = x'
+A function is \emph{one-to-one}(or \emph{injective}) if \[
+	f(x) = f(x') \Rightarrow x = x'
 \]
 
-A function is onto(or surjective) if \[
-    \forall y \in Y, \exists x \in X such that f(x) = y
+A function is \emph{onto}(or \emph{surjective}) if \[
+	\forall y \in Y, \exists x \in X such that f(x) = y
 \]
 
-If \(f\) is both onto and one-to-one, then it's bijective.
+If \(f\) is both onto and one-to-one, then it's \emph{bijective}.
 
 If \(f\) is bijective, then for every \(y \in Y\), there is exactly one \(x\) such that \(f(x) = y\).
 This value of \(x\) is denoted as \(f^{-1}(y)\).
