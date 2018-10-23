@@ -1,0 +1,47 @@
+Peano Axisoms
+first we have
+    [0 is a natural number.]
+and 
+    [If n is a natural number then n++ is alse a natural number.]
+and then there may still be an issue:
+    Connsider a number system whick consists of the nubmers 0, 1, 2, 3, in which the increment operation wraps back from 3 to 0. 
+    This kind of number system obeys the first 2 axioms, even thought it clearly does not correspond to what we intuitively belive the natural numbers to be like.
+To prevent this sort of "wrap-around issue", then the third axiom comes out
+    [0 is not the successor of any natural number]
+Consider a number system consisting of 3 numbers, 0, 1, 2, 3, in which the increment operation hits a "ceiling". 
+    [Different natural numbers must have different successors]
+
+
+(Informal) Suppose that our numbers system N consisted of the following collection of integers and half-integers
+    N := {0, 0.5, 1, 1.5, 2, ...} - we haven't define what a half number is, so this description is informal, or maybe you can take it as a house or whatever else.
+This set obeys the 4 axioms but its clearly not the natural numbers we intuitively want.
+
+(Principle of mathematical induction) Let P(n) be any property pertaining to a natural number n. Suppose that P(0) is true, and suppose that whenever P(n) is true, P(n++) is alse true. Then P(n) is true for every natural number n.
+Since this axiom says P(n) is true for [every] natrual nubmer n, so it should not hold for number systems which contain "unnecessary" elements such as 0.5
+
+Note that our defination of the natural numbers is [axiomatic] rather than constructive. The defination is kinda like the [duck test]: 
+    If it looks like a duck, swims like a duck, and quacks like a duck, then it probably is a duck.
+If the set matches the five Peano axioms, then it's a natural numbers set.
+
+
+
+Addition 
+    0 + m is m
+    if we have n + m then have (n++) + m equals to (n + m)++
+from this defination, we can deduce everything we know about Addition
+
+begin with some basic lemmas
+    n + 0 = n
+    n + (m++) = (n + m)++
+then propositions
+    (commutative) m + n = n + m
+    (associative) (a + b) + c = a + (b + c)
+    (Cancellation law) if a + b = a + c then c = b
+
+
+
+
+
+Strong princile of induction
+    Let m0 be a natural number, and let P(m) be a property pertaining to an arbitrary natural number m. Suppose that for each m >= m0, we have the following implication: if P(m') is true for all natural numbers m0 <= m' < m then P(m) is also true.
+Then we can conclude that P(m) is true for all natural numbers m >= m0
